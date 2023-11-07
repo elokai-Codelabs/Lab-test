@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>University of Ghana Login</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .login-container {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+      }
+
+      .login-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .login-form {
+        text-align: left;
+      }
+
+      .login-label {
+        font-weight: bold;
+      }
+
+      .login-input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .login-buttons {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .login-button {
+        padding: 10px 20px;
+        background-color: #00bfff;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .login-cancel-button {
+        padding: 10px 20px;
+        background-color: #fff;
+        color: #000;
+        font-size: 16px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-left: 10px;
+      }
+
+      .login-forgot-password {
+        font-size: 14px;
+        margin-top: 10px;
+      }
+
+      .logo {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <img
+        src="https://sakai.ug.edu.gh/library/skin/morpheus-default/images/logo-jewel.png"
+        alt="University of Ghana Logo"
+        width="100"
+        class="logo"
+      />
+      <h2 class="login-title">University of Ghana Login</h2>
+      <form class="login-form" action="login.php" method="post">
+        <div>
+          <label class="login-label" for="username">User ID:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            class="login-input"
+            placeholder="Enter your User ID"
+          />
+        </div>
+        <div>
+          <label class="login-label" for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="login-input"
+            placeholder="Enter your Password"
+          />
+        </div>
+        <div class="login-buttons">
+          <input type="submit" value="Log In" class="login-button" />
+          <input type="reset" value="Cancel" class="login-cancel-button" />
+        </div>
+      </form>
+      <a href="#" class="login-forgot-password">Forgot your password?</a>
+    </div>
+  </body>
+</html>
